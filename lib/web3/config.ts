@@ -3,7 +3,7 @@ import { baseSepolia, base } from "wagmi/chains";
 import { coinbaseWallet } from "wagmi/connectors";
 
 export const config = createConfig({
-  chains:  [baseSepolia, base],
+  chains: [baseSepolia, base],
   connectors: [
     coinbaseWallet({
       appName: "Arisako",
@@ -16,5 +16,5 @@ export const config = createConfig({
   },
 });
 
-export const IDRX_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_IDRX_CONTRACT as `0x${string}`;
-export const ARISAKO_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_ARISAKO_POOL_CONTRACT as `0x${string}`;
+export const IDRX_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_IDRX_CONTRACT as `0x${string}` | undefined;
+export const ARISAN_FACTORY_ADDRESS = process.env.NEXT_PUBLIC_ARISAN_FACTORY_CONTRACT as `0x${string}` | undefined;

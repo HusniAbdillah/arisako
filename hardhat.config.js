@@ -11,7 +11,7 @@ module.exports = {
         enabled: true,
         runs: 200,
         details: {
-          yul:  true,
+          yul: true,
         },
       },
     },
@@ -21,29 +21,29 @@ module.exports = {
       chainId: 31337,
       forking: process.env.BASE_SEPOLIA_RPC_URL
         ? {
-            url: process.env. BASE_SEPOLIA_RPC_URL,
+            url: process.env.BASE_SEPOLIA_RPC_URL,
           }
         : undefined,
     },
     baseSepolia: {
       url: process.env.BASE_SEPOLIA_RPC_URL || "https://sepolia.base.org",
-      accounts: process.env. DEPLOYER_PRIVATE_KEY
-        ? [process.env. DEPLOYER_PRIVATE_KEY]
+      accounts: process.env.DEPLOYER_PRIVATE_KEY
+        ? [process.env.DEPLOYER_PRIVATE_KEY]
         : [],
       chainId: 84532,
       gasPrice: 1000000000, // 1 gwei
     },
     baseMainnet: {
-      url: process. env.BASE_MAINNET_RPC_URL || "https://mainnet.base.org",
-      accounts: process.env. DEPLOYER_PRIVATE_KEY
-        ? [process.env. DEPLOYER_PRIVATE_KEY]
+      url: process.env.BASE_MAINNET_RPC_URL || "https://mainnet.base.org",
+      accounts: process.env.DEPLOYER_PRIVATE_KEY
+        ? [process.env.DEPLOYER_PRIVATE_KEY]
         : [],
       chainId: 8453,
     },
   },
   etherscan: {
-    apiKey:  {
-      baseSepolia: process.env. BASESCAN_API_KEY || "",
+    apiKey: {
+      baseSepolia: process.env.BASESCAN_API_KEY || "",
       base: process.env.BASESCAN_API_KEY || "",
     },
     customChains: [
