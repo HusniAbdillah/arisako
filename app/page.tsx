@@ -2,10 +2,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Wallet } from "@coinbase/onchainkit/wallet";
+import { Web3Auth } from "@/components/auth";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Web3Auth />
       <header className={styles.headerWrapper}>
         <Wallet />
       </header>

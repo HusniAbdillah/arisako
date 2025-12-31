@@ -23,10 +23,12 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
+    "@ambire/signature-validator": "^1.5.0",
     "@chainlink/contracts": "^1.5.0",
     "@coinbase/onchainkit": "1.1.2",
     "@openzeppelin/contracts": "^5.4.0",
     "@rainbow-me/rainbowkit": "^2.2.10",
+    "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.89.0",
     "@tanstack/react-query": "^5.81.5",
     "@wagmi/connectors": "^5.0.1",
